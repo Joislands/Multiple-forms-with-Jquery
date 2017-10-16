@@ -1,0 +1,118 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 120%;
+	/*background: #F8F8FF;*/
+    background-color: #cccccc;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen-bgvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bgvideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bgvideo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.header {
+    width: 25%;
+    margin: 70px auto 0px;
+    color: white;
+    background: transparent;
+    text-align: center;
+    border: 1px solid #fff;
+    border-bottom: none;
+    border-radius: 0px 0px 0px 0px;
+    padding: 20px;
+    height: 230px;
+}
+
+.logo {
+    margin-top:70px;
+}
+form, .content {
+    width: 25%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 0px 0px 0px 0px;
+    border-top: none;
+}
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+    color: white;
+}
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 0px;
+    border: 0px solid white;
+    opacity: 0.4;
+    filter: alpha(opacity=50);
+}
+.btn {
+    padding: 10px;
+    font-size: 25px;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 0px;
+    width: 334px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #fff; opacity:0.4;
+    color:#000;
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
